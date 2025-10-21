@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Homepage Flower Grid */
+.flower-grid ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+
+.flower-grid li a {
+    display: block;
+    background-color: white;
+    color: #4CAF50;
+    padding: 40px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.flower-grid li a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Flower Detail Pages */
+.flower-detail-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.flower-detail-container h1 {
+    color: #4CAF50;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+.flower-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flower-detail-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .flower-grid ul {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .flower-grid ul {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+}
